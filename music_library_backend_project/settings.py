@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.messages', 
     'django.contrib.staticfiles', 
     'rest_framework', 
-    'music_library', 
     'corsheaders', 
 ] 
 
@@ -45,7 +44,7 @@ INSTALLED_APPS = [
  
 
 MIDDLEWARE = [ 
-
+    
     'django.middleware.security.SecurityMiddleware', 
 
     'django.contrib.sessions.middleware.SessionMiddleware', 
@@ -62,15 +61,16 @@ MIDDLEWARE = [
 
     'corsheaders.middleware.CorsMiddleware' 
 
+
 ] 
 
  
- 
+
 
 ROOT_URLCONF = 'music_library_backend_project.urls' 
 
- 
- 
+
+
 
 TEMPLATES = [ 
 
@@ -186,7 +186,6 @@ CORS_ORIGIN_ALLOW_ALL=True
  
 
 try: 
-
     from music_library_backend_project.local_settings import * 
 
 except ImportError: 
