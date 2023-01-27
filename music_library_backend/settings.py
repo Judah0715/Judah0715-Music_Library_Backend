@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # SECURITY WARNING: don't run with debug turned on in production! 
-EBUG = True 
+DEBUG = True 
 
 ALLOWED_HOSTS = [] 
 
@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.messages', 
     'django.contrib.staticfiles', 
     'rest_framework', 
-    'corsheaders', 
-    'music',
+    'music_library_backend_project',
+    'corsheaders',
 ] 
 
  
@@ -173,12 +173,12 @@ TIME_ZONE = 'UTC'
 USE_I18N = True 
 
  
- 
+
 
 USE_TZ = True 
 
  
- 
+STATIC_URL = 'static/'
  
 
 CORS_ORIGIN_ALLOW_ALL=True 
@@ -187,7 +187,7 @@ CORS_ORIGIN_ALLOW_ALL=True
  
 
 try: 
-    from music_library_backend_project.local_settings import * 
+    from music_library_backend.local_settings import * 
 
 except ImportError: 
 
