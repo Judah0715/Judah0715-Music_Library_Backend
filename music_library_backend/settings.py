@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.messages', 
     'django.contrib.staticfiles', 
     'rest_framework', 
-    'music_library_backend_project',
     'corsheaders',
+    'songs',
 ] 
 
  
@@ -49,6 +49,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware', 
 
     'django.contrib.sessions.middleware.SessionMiddleware', 
+    'corsheaders.middleware.CorsMiddleware' ,
 
     'django.middleware.common.CommonMiddleware', 
 
@@ -60,7 +61,6 @@ MIDDLEWARE = [
 
     'django.middleware.clickjacking.XFrameOptionsMiddleware', 
 
-    'corsheaders.middleware.CorsMiddleware' 
 
 
 ] 
@@ -68,7 +68,7 @@ MIDDLEWARE = [
  
 
 
-ROOT_URLCONF = 'music_library_backend_project.urls' 
+ROOT_URLCONF = 'music_library_backend.urls' 
 
 
 
