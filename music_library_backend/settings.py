@@ -106,7 +106,7 @@ TEMPLATES = [
  
  
 
-WSGI_APPLICATION = 'music_library_backend_project.wsgi.application' 
+WSGI_APPLICATION = 'music_library_backend.wsgi.application' 
 
  
  
