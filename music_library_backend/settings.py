@@ -104,7 +104,9 @@ TEMPLATES = [
 ] 
 
  
- 
+REST_FRAMEWORK = {
+    'COERCE_DECIMAL_TO_STRING': False
+ }
 
 WSGI_APPLICATION = 'music_library_backend.wsgi.application' 
 
